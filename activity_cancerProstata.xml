@@ -7,7 +7,7 @@
     android:id="@+id/Fondo"
     android:background="#15874236">
 
-    <Button
+    < Button
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="Descripción"
@@ -19,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:typeface="monospace" />
-    <Button
+    < Button
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="Sintomatología"
@@ -54,7 +54,7 @@
         android:layout_alignStart="@+id/boton_h"
         android:layout_marginTop="36dp"
         android:textStyle="bold" />
-
+/*Los demasiados botton ocasionan que el compilador  no quiera progresar*/
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
