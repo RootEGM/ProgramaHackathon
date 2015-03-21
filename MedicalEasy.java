@@ -1,10 +1,17 @@
 package com.hackathon.medicaleasy.medicaleasy;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.view.View;
+import android.widget.Button;
+import android.app.Activity;
+import android.os.Build;
+import android.os.Handler;
+import android.view.MotionEvent;
+import android.widget.Toast;
 
 public class MedicalEasy extends ActionBarActivity {
 
@@ -12,10 +19,21 @@ public class MedicalEasy extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_medical_easy);
+
+        Button buttonDiabetes = (Button)findViewById(R.id.boton_diabetes);
+        buttonDiabetes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Se crea un letrero para comprobar que se recibe la pulsacion del boton
+                Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show());
+                //Se llama a otra activity
+                Intent intentDiabetes;
+                intentDiabetes = new Intent(this,Diabetes);
+                startActivity(intentDiabetes);
+            }
+        });
     }
-
-
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_medical_easy, menu);
@@ -35,5 +53,5 @@ public class MedicalEasy extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
