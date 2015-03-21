@@ -25,11 +25,50 @@ public class MedicalEasy extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 //Se crea un letrero para comprobar que se recibe la pulsacion del boton
-                Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show();
                 //Se llama a otra activity
                 Intent intentDiabetes;
                 intentDiabetes = new Intent(getApplicationContext(),Diabetes.class);
                 startActivity(intentDiabetes);
+            }
+        });
+
+        Button buttonGastritis = (Button)findViewById(R.id.boton_gastritis);
+        buttonGastritis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Se crea un letrero para comprobar que se recibe la pulsacion del boton
+                //Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show();
+                //Se llama a otra activity
+                Intent intentGastritis;
+                intentGastritis = new Intent(getApplicationContext(),gastritis.class);
+                startActivity(intentGastritis);
+            }
+        });
+
+        Button buttonCancer = (Button)findViewById(R.id.boton_prostata);
+        buttonCancer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Se crea un letrero para comprobar que se recibe la pulsacion del boton
+                //Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show();
+                //Se llama a otra activity
+                Intent intentProstata;
+                intentProstata = new Intent(getApplicationContext(),CancerProstata.class);
+                startActivity(intentProstata);
+            }
+        });
+
+        Button buttonHipertension = (Button)findViewById(R.id.boton_hipertension);
+        buttonHipertension.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Se crea un letrero para comprobar que se recibe la pulsacion del boton
+                //Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show();
+                //Se llama a otra activity
+                Intent intentHipertension;
+                intentHipertension = new Intent(getApplicationContext(),hipertension.class);
+                startActivity(intentHipertension);
             }
         });
     }
