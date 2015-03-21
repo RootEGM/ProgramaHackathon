@@ -25,10 +25,10 @@ public class MedicalEasy extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 //Se crea un letrero para comprobar que se recibe la pulsacion del boton
-                Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show());
+                Toast.makeText(getApplicationContext(), "Hola mundo", Toast.LENGTH_LONG).show();
                 //Se llama a otra activity
                 Intent intentDiabetes;
-                intentDiabetes = new Intent(this,Diabetes);
+                intentDiabetes = new Intent(getApplicationContext(),Diabetes.class);
                 startActivity(intentDiabetes);
             }
         });
