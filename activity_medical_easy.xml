@@ -8,46 +8,50 @@
     android:background="#15874236">
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Diabetes"
         android:id="@+id/boton"
-        android:layout_marginTop="157dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:clickable="true"
-        android:enabled="true" />
+        android:enabled="true"
+        android:layout_above="@+id/boton_g"
+        android:layout_alignLeft="@+id/boton_h"
+        android:layout_alignStart="@+id/boton_h"
+        android:layout_marginBottom="127dp" />
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Gastritis"
         android:id="@+id/boton_g"
-        android:layout_alignTop="@+id/boton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:clickable="true"
-        android:enabled="true" />
+        android:enabled="true"
+        android:layout_marginBottom="131dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/boton_h"
+        android:layout_alignStart="@+id/boton_h" />
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Hipertension Arterial"
         android:id="@+id/boton_h"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/boton"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_alignTop="@+id/boton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:clickable="true"
-        android:enabled="true" />
+        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp" />
     <Button
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Cancer de Prostata"
         android:id="@+id/boton_p"
-        android:layout_alignTop="@+id/boton_h"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:clickable="true"
-        android:enabled="true" />
+        android:enabled="true"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="93dp"
+        android:layout_alignTop="@+id/boton_g"
+        android:layout_toRightOf="@+id/boton_g"
+        android:layout_toEndOf="@+id/boton_g" />
 
 </RelativeLayout>
